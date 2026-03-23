@@ -1,0 +1,63 @@
+# Training outputs
+logs/
+cache/
+model/
+result/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.eggs/
+
+# Model weights (download separately)
+*.pth
+*.model
+*.prm
+
+# Experimental (not for release)
+FACT_actseg/
+FACT_cp/
+hasr/
+run_*.sh
+eval_postprocess.py
+eval_diffact_baseline.py
+data/
+
+# Backbones not needed for release (keep only DiffAct)
+backbones/ASFormer/
+backbones/BaFormer/
+backbones/CVPR2024-FACT/
+backbones/LTContext/
+backbones/MS-DSA-NET/
+backbones/DiffAct/trained_models/
+backbones/DiffAct/datasets/
+backbones/DiffAct/.git/
+
+# Dataset (user downloads separately)
+dataset/
+
+# Qualitative figures (generated, not tracked)
+docs/qualitative/
+
+# Claude settings
+.claude/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Misc
+vis.png
+*.ipynb_checkpoints/
+docs/TST_Journal_Revision_Plan.md
+docs/2302.13074v1.pdf
+scripts/experiments/
+tst/dataset
